@@ -1,0 +1,27 @@
+.search{
+    position: absolute;
+    top: 110%;
+    left: -22%;
+    width: 350px;
+    z-index: 999;
+}
+.borderLtoR:hover::before{
+    content: '';
+    bottom: 0;
+    left: 0;
+    height: 0;
+    border: 2px solid #ff7779;
+    animation: grow 1s linear;
+    animation-fill-mode: forwards;
+    transition: all 1s;
+}
+
+@keyframes grow {
+    100%{
+        width: 100%;
+    }
+}
+
+.icons{
+    transition: all 0.5s ease-in-out;
+}
